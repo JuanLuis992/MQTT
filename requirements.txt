@@ -1,2 +1,2 @@
 paho-mqtt==1.6.1
-nicegui==0.4.2
+nicegui==2.14.1
