@@ -1,8 +1,22 @@
-[phases.setup]
-nixPkgs = ["python3", "gcc"]
+[project]
+name = "MQTT"
+version = "0.1.0"
+description = "test"
+authors = [
+    {name = "JuanLuis992",email = "juanluisrodriguez514@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.10,<3.13"
+dependencies = [
+    "python-dotenv==1.1.0",
+    "nicegui==2.14.1",
+    "paho-mqtt==2.1.0"
+]
 
-[phases.build]
-cmds = ["pip install -r requirements.txt"]
+[tool.poetry]
+package-mode = false
 
-[start]
-cmd = "python main.py"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
